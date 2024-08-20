@@ -16,8 +16,8 @@ This algorithm moves all the zeros in an array to the end while maintaining the 
 
 The algorithm effectively shifts non-zero elements forward and ensures all zeros are at the end, while operating in place with an auxiliary list to track the positions of zeros.
 
-**Time complexity:** O(n)
-**Space complexity:** O(n)
+- **Time complexity:** O(n)
+- **Space complexity:** O(n)
 
 ### [2415. Reverse Odd Levels of Binary Tree](https://leetcode.com/problems/reverse-odd-levels-of-binary-tree/)
 
@@ -31,8 +31,8 @@ This algorithm reverses the values of nodes at odd levels of a binary tree. The 
 2.  **Identification of odd levels:** As nodes are visited, they are categorized based on their level. Nodes at even levels (parents of odd nodes) are stored in a dictionary.
 3.  **Reversal of nodes:** For each even parent node, its child nodes (odd nodes) are reversed. This is achieved by iteratively swapping the values of the left-most and right-most nodes in the level.
 
-**Time complexity:** O(n)
-**Space complexity:** O(n)
+- **Time complexity:** O(n)
+- **Space complexity:** O(n)
 
 ### [1192. Critical Connections in a Network](https://leetcode.com/problems/critical-connections-in-a-network/)
 
@@ -49,9 +49,9 @@ This algorithm finds all the critical connections (or bridges) in an undirected 
     - Identify critical connections where the `low` value of an adjacent node is greater than the discovery time of the current node.
 4.  **Result Collection**: Collect and return all identified critical connections.
 
-**Time complexity:** O(V + E)
-**Space complexity:** O(V + E)
-( V is the number of nodes and E is the number of edges)
+- **Time complexity:** O(V + E)
+- **Space complexity:** O(V + E)
+  ( V is the number of nodes and E is the number of edges)
 
 ### [2035. Partition Array Into Two Arrays to Minimize Sum Difference](https://leetcode.com/problems/partition-array-into-two-arrays-to-minimize-sum-difference/)
 
@@ -69,8 +69,8 @@ This algorithm calculates the minimum difference between the sums of two subsets
 4.  **Iterate through left subarray sums:** For each subset sum in the `leftSide`, use binary search on the sorted `rightSide` subset sums to find the closest sum that minimizes the difference between the two subset sums.
 5.  **Return the minimum difference:** After iterating through all possible elements in `leftSide`'s list of sums, the algorithm returns the final `result`, which represents the minimum difference discovered between the sum of two subsets of the original array.
 
-**Time complexity:** O(2^2^\*log(2^n^))
-**Space complexity:** O(n^2^)
+- **Time complexity:** O(2^2^\*log(2^n^))
+- **Space complexity:** O(n^2^)
 
 ### [32. Longest Valid Parentheses (Bonus)](https://leetcode.com/problems/longest-valid-parentheses/)
 
@@ -83,3 +83,6 @@ This algorithm finds the length of the longest valid parentheses substring in a 
 2.  **Mark Valid Parentheses**: As pairs are matched, it updates a `record` array to mark the positions of valid parentheses pairs.
 
 3.  **Calculate Longest Valid Substring**: After processing the entire string, the algorithm splits the `record` array on zeros to isolate contiguous valid parentheses substrings, computes their lengths, and identifies the maximum length among them.
+
+- **Time complexity:** O(n)
+- **Space complexity:** O(n)
